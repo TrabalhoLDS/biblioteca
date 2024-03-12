@@ -1,5 +1,16 @@
+
 <x-guest-layout>
+
+
     <x-authentication-card>
+    <head>
+  <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <script src="login.js"></script>
+</head>
+
         <x-slot name="logo">
             <x-authentication-card-logo />
         </x-slot>
