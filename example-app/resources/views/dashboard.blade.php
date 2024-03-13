@@ -1,15 +1,26 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+    
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
+    <head>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">  
+    <script src="login.js"></script>
+    </head>
+
+    <body>
+    
+        <div class='container'>
+            <div class='card'> 
+                <h1>Escolha sua ação</h1>
+
+                
+                <x-button id="devolverLivro">Devolver Livro</x-button>
+                <x-button><a href="{{ route('aluguel-de-livros') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Aluguel de livros</a></x-button>
+                <x-button><a href="{{ route('cadastro-livro') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Cadastrar livros</a></x-button>        
             </div>
         </div>
-    </div>
+
+    </body>    
+    
 </x-app-layout>

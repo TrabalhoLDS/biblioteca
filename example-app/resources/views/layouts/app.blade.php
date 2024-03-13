@@ -11,17 +11,19 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         
+        
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/login.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/estantedelivros.css')}}">
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
-        <x-banner />
+       
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen ">
             @livewire('navigation-menu')
 
             <!-- Page Heading -->

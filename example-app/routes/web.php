@@ -36,3 +36,13 @@ Route::middleware([
         return view('aluguel-de-livros');
     })->name('aluguel-de-livros');
 });
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/cadastro-livro', function () {
+        return view('cadastro-livro');
+    })->name('cadastro-livro');
+});
